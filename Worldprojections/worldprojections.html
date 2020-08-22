@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projections</title>
+</head>
+<body>
+    <h1>In this project I learned how to display images in different projections</h1>
+    
+    <h2 style="color:red">Describe in your own words how you displayed the map in different projections using QGIS</h2>
+    <p>In QGIS, you can search for hundreds of different projections of the world map. I used this feature to apply different projections that I searched for to one map and created a png file of each projection I found.</p>
+    
+    <h2>WGS84 Projection</h2>
+    <h3>This map becomes more distorted the closer you get to the poles, as the closer you get to the poles, the larger the objects become. </h3>
+    <a href=".//maps/4326.png">
+    <img src=".//maps/4326.png" alt="WGS84" width='500px'>
+    </a>
+    <h2>Aitoff Projection</h2>
+    <h3>This map becomes more distorted as you get farther away from the intersection between the Equator and Prime Meridian, which is the center of the map. The map is shaped like an ellipsoid in order to better represent the shape of the Earth.</h3>
+    <a href=".//maps/54043.png">
+    <img src=".//maps/54043.png" alt="Aitoff" width='500px'>
+    </a>
+    <h2>Pseudo-Mercator Projection</h2>
+    <h3>This map increases in distortion as you get closer to the poles, as the closer you get to the north or south pole, the larger the projection becomes.</h3>
+    <a href="./maps/3857.png">
+    <img src="./maps/3857.png" alt="Pseudo" width='500px'>
+    </a>
+    <h2>Sphere Winkel Projection</h2>
+    <h3>This map streches things as you go farther up north and down south. In order to help compensate for this distortion, objects closer to the poles have had their width reduced and the entire map is ellipsoid shaped.</h3>
+    <a href="./maps/53018.png">
+    <img src="./maps/53018.png" alt="Winkel" width='500px'>
+    </a>
+    <h2>World Cylindrical Equal Area Projection</h2>
+    <h3>A majority of this map's distortion occurs near the poles. Most of the map seems to be rather undistorted, and there appears to be little to none veritical distortion at all. However, in order to get the map to be a more rectangular shape, the area near the poles has be significantly widened, causing it to have a streched appearence.</h3>
+    <a href="./maps/54034.png">
+    <img src="./maps/54034.png" alt="World Cylindrical" width='500px'>
+    </a>
+    <h2>World Equidistant Conic Projection</h2>
+    <h3>This is a cinic projection that has its center at the north pole. The area around the center has little distortation, but the farther you go out, the more distorted it becomes.</h3>
+    <a href="./maps/54027.png">
+    <img src="./maps/54027.png" alt="Conic" width='500px'>
+    </a>
+    <h2>North Pole Azimuthal Equidistant Projection</h2>
+    <h3>This projection has its center at the north pole, with distortion increasing as you get closer to the south pole.</h3>
+    <a href="./maps/102016.png">
+    <img src="./maps/102016.png" alt="Azimuthal" width='500px'>
+    </a>
+    <h2> World Craster Parabolic Projection</h2>
+    <h3>This projection has little to none distortion near the equator, but becomes much more distorted as you get to the poles. Each hemisphere of the map is cone-shaped, causing locations to appear closer to each other then they actually are.</h3>
+    <a href="./maps/54046.png">
+    <img src="./maps/54046.png" alt="Craster" width='500px'>
+    </a>
+    <h2> Guam Geodetic Triangulation Network 1963 Projection</h2>
+    <h3>This map is is a azimuthal projection centered in Guam, meaning that distortion increases as the distance from Guam increases.</h3>
+    <a href="./maps/102239.png">
+    <img src="./maps/102239.png" alt="Guam" width='500px'>
+    </a>
+    <h2 style="color:red"><u></u></h2>
+    <h3></h3>
+    <p></p>
+    <h2>Data used for this project</h2>
+    <a href="https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip"> Download Natrual Earth 1:10m Cultural Vector </a>
+</body>
+</html>
